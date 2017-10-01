@@ -26,8 +26,8 @@ var sentences = map(words);
 // var filterQs = function(xs) {
 //   return filter(function(x){ return match(/q/i, x);  }, xs);
 // };
-var isQ = match(/q/i);
-var filterQs = filter(isQ);
+var hasQ = match(/q/i);
+var filterQs = filter(hasQ);
 
 // Exercise 3
 //==============
