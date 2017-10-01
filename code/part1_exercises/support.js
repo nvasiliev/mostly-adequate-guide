@@ -14,7 +14,7 @@ function inspectArgs(args) {
   }, '(') + ')';
 }
 
-function curry(fx) {
+curry = function curry(fx) {
   var arity = fx.length;
 
   return function f1() {
@@ -33,7 +33,7 @@ function curry(fx) {
       return f2;
     }
   };
-}
+};
 
 compose = function() {
   var fns = toArray(arguments),
